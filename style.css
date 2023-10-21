@@ -1,0 +1,151 @@
+:root {
+    --dark-blue: #678292;
+    --light-blue: #8fc0dd;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #212121;
+    color: white;
+}
+
+header {
+    width: 90%;
+    max-width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    gap: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin-top: 10rem;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+#about {
+    text-align: center;
+    width: 70%;
+}
+
+nav {
+    display: block;
+}
+
+h1 {
+    margin-top: 2rem;
+}
+
+#menu {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    margin-right: 3rem;
+}
+
+p {
+    margin-top: 0.2rem;
+    color: silver;
+    line-height: 2rem;
+}
+
+#projects {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cards {
+    max-width: 1020px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.75rem;
+}
+
+.card {
+    max-width: 20rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #101010;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+.card:hover {
+    border-color: var(--light-blue);
+}
+
+.card-img {
+    max-width: 18.5rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card p {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    margin-top: 1rem;
+}
+
+.git-link:hover {
+    color: var(--light-blue);
+}
+
+h2 {
+    margin: 2rem auto;
+
+}
+
+h3 {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+    h1 {
+        margin-bottom: 1rem;
+    }
+}
