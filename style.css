@@ -1,6 +1,6 @@
 :root {
+    --primary: #8fc0dd;
     --dark-blue: #678292;
-    --light-blue: #8fc0dd;
 }
 
 * {
@@ -74,7 +74,14 @@ h1 {
 }
 
 li {
-    margin-right: 3rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+li::after {
+    color: var(--primary);
+    color: red;
 }
 
 p {
@@ -111,7 +118,7 @@ p {
 }
 
 .card:hover {
-    border-color: var(--light-blue);
+    border-color: var(--primary);
 }
 
 .card-img {
@@ -127,7 +134,7 @@ p {
 }
 
 .git-link:hover {
-    color: var(--light-blue);
+    color: var(--primary);
 }
 
 h2 {
