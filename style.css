@@ -254,4 +254,8 @@ a.git-link:hover {
     h1 {
         margin-bottom: 1rem;
     }
+
+    .fun-img {
+        width: 250px;
+    }
 }
