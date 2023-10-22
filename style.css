@@ -1,6 +1,7 @@
 :root {
     --primary: #8fc0dd;
-    --dark-blue: #678292;
+    --title: #f9f9f9;
+    --text: #828282;
 }
 
 * {
@@ -12,7 +13,8 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #212121;
-    color: white;
+    color: var(--title);
+    font-weight: 400;
 }
 
 header {
@@ -31,6 +33,35 @@ header {
     justify-content: space-between;
     justify-items: center;
     gap: 20px;
+}
+
+#menu {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#contact {
+    width: 90%;
+    max-width: 1120px;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about {
+    text-align: center;
+    width: 70%;
+}
+
+#projects {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 footer {
@@ -59,11 +90,6 @@ ul {
     display: flex;
 }
 
-#about {
-    text-align: center;
-    width: 70%;
-}
-
 nav {
     display: block;
 }
@@ -72,14 +98,24 @@ h1 {
     margin-top: 2rem;
 }
 
-#menu {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
+h1#title {
+    font-size: 1.75rem;
 }
 
+h2 {
+    margin: 2rem auto;
+
+}
+
+h3 {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+
 li {
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
@@ -98,12 +134,25 @@ p {
     line-height: 2rem;
 }
 
-#projects {
+.logos {
+    margin-top: 10px;
     display: flex;
-    padding: 20px;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    gap: 5px;
+}
+
+.logos a {
+    color: var(--text);
+    font-size: 0.8rem;
+}
+
+.fun-img {
+    width: 300px;
+}
+
+img.logo {
+    width: 20px;
+    margin-right: 10px;
 }
 
 .cards {
@@ -143,17 +192,7 @@ p {
 
 .git-link:hover {
     color: var(--primary);
-}
-
-h2 {
-    margin: 2rem auto;
-
-}
-
-h3 {
-    margin-top: 1rem;
-    font-size: 1.125rem;
-    font-weight: 500;
+    font-size: 1.05rem;
 }
 
 @media (max-width: 600px) {
@@ -162,5 +201,8 @@ h3 {
     }
     h1 {
         margin-bottom: 1rem;
+    }
+    li {
+        margin-top: 1rem;
     }
 }

@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Portfólio</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Portfolio</h1>
+            <h1 id="title">Portfólio</h1>
             <div class="menu">
                 <nav>
                     <ul>
+                        <li>
+                            <a href="#contact">Contato</a>
+                        </li>
                         <li>
                             <a href="#about">Sobre</a>
                         </li>
@@ -24,17 +27,31 @@
                         <li>
                             <a href="#about">Skills</a>
                         </li>
-                        <li>
-                            <a href="#about">Mais</a>
-                        </li>
                     </ul>
                 </nav>
             </div>
         </header>
 
+        <div id="contact">
+            <div class="infos">
+                <h1>Fillipe Miranda</h1>
+                <p>Desenvolvedor de software</p>
+                <div class="logos">
+                    <a href="mailto: famgz@proton.me" target="_blank"><img class="logo" src="images/logos/email.png" alt="email logo">famgz@proton.me</a>
+                    <a href="https://www.linkedin.com/in/famgz/" target="_blank"><img class="logo" src="images/logos/linkedin.png" alt="linkedin logo">Linkedin</a>
+                    <a href="https://github.com/famgz" target="_blank"><img class="logo" src="images/logos/github.png" alt="github logo">Github</a>
+
+                </div>
+            </div>
+
+            <div class="top-img">
+                <img class="fun-img" src="images/fun.png" alt="Ludic image of a software engineer">
+            </div>
+        </div>
+
         <div id="about">
             <h2>Sobre</h2>
-            <p>Desenvolvedor de software. Iniciei meus estudos em programação em 2022 desenvolvendo projetos pessoais, com destaque para resolução lógica de problemas e rápido aprendizado, com foco na linguagem Python. Atualmente estou cursando Análise e Desenvolvimento de Sistemas e possuo graduação em Arquitetura e Urbanismo pela UFPB em 2014, área em que atuei por diversos anos e cuja experiência com trabalho em equipe e contato com clientes irá contribuir para a área de tecnologia.</p>
+            <p>Iniciei meus estudos em programação em 2022 desenvolvendo projetos pessoais, com destaque para resolução lógica de problemas e rápido aprendizado, e focado na linguagem Python. Atualmente estou cursando segundo período de Análise e Desenvolvimento de Sistemas e possuo graduação em Arquitetura e Urbanismo pela UFPB em 2014, área em que atuei por diversos anos e cuja experiência com trabalho em equipe e contato com clientes irá contribuir para a área de tecnologia. À procura da primeira oportunidade como programador.</p>
         </div>
 
         <div id="projects">
@@ -55,7 +72,7 @@
                 <div class="card">
                     <img class="card-img" src="images/find-imdb.jpg" alt="">
                     <h3>Find IMDb</h3>
-                    <p>Python | Ferramenta para encontrar IMDb de um filme
+                    <p>Python | Encontre o IMDb de um filme através do título e diretor
                     <a class="git-link" href="https://github.com/famgz/find-imdb" target="_blank">(github)</a></p>
                 </div>
                 <div class="card">
