@@ -2,6 +2,8 @@
     --primary: #8fc0dd;
     --title: #f9f9f9;
     --text: #828282;
+    --background: #191919;
+    --deeper-background: #101010;
 }
 
 * {
@@ -12,7 +14,7 @@
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #212121;
+    background-color: var(--background);
     color: var(--title);
     font-weight: 400;
 }
@@ -23,6 +25,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header a:hover {
+    color: var(--primary);
 }
 
 .container {
@@ -39,6 +45,26 @@ header {
     margin-top: 2rem;
     display: flex;
     align-items: center;
+}
+
+nav {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+li::after {
+    color: var(--primary);
+    color: red;
 }
 
 #contact {
@@ -64,16 +90,23 @@ header {
     text-align: center;
 }
 
+#skills {
+    display: block;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+
 footer {
     width: 100%;
     min-height: 60px;
     display: flex;
-    margin-top: 10rem;
+    margin-top: 8rem;
     flex-direction: row;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    background-color: black;
+    background-color: var(--deeper-background);
 }
 
 footer p {
@@ -83,15 +116,6 @@ footer p {
 a {
     text-decoration: none;
     color: white;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-}
-
-nav {
-    display: block;
 }
 
 h1 {
@@ -113,18 +137,6 @@ h3 {
     font-weight: 500;
 }
 
-
-li {
-    margin-top: 2.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-li::after {
-    color: var(--primary);
-    color: red;
-}
-
 p {
     max-width: 745px;
     margin-top: 0.2rem;
@@ -134,25 +146,33 @@ p {
     line-height: 2rem;
 }
 
-.logos {
+div.logos {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.logos a {
+a.logo {
     color: var(--text);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+}
+
+a.logo span {
+    margin-bottom: 10px;
+}
+
+a.logo span:hover {
+    color: var(--primary);
+}
+
+a.logo img {
+    width: 20px;
+    margin-right: 10px;
 }
 
 .fun-img {
-    width: 300px;
-}
-
-img.logo {
-    width: 20px;
-    margin-right: 10px;
+    width: 350px;
 }
 
 .cards {
@@ -169,7 +189,7 @@ img.logo {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    background-color: #101010;
+    background-color:var(--deeper-background);
     border: 1px solid #333;
     text-align: left;
 }
@@ -184,25 +204,54 @@ img.logo {
     object-fit: cover;
 }
 
+.mini-cards {
+    max-width: 900px;
+    margin: 20px;
+
+}
+
+.mini-card {
+    max-width: 10rem;
+    padding: 2rem;
+}
+
 .card p {
     font-size: 0.875rem;
     line-height: 1.125rem;
     margin-top: 1rem;
 }
 
-.git-link:hover {
+a.git-link:hover {
     color: var(--primary);
     font-size: 1.05rem;
 }
 
 @media (max-width: 600px) {
     header {
+        width: 100%;
         flex-direction: column;
     }
+
+    div nav ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    nav ul li {
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        gap: 50px;
+    }
+
     h1 {
         margin-bottom: 1rem;
-    }
-    li {
-        margin-top: 1rem;
     }
 }
