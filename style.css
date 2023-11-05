@@ -197,6 +197,7 @@ a.logo img {
 
 .card:hover {
     border-color: var(--primary);
+    transition: all 500ms;
 }
 
 .card-img {
@@ -220,11 +221,6 @@ a.logo img {
     font-size: 0.875rem;
     line-height: 1.125rem;
     margin-top: 1rem;
-}
-
-a.git-link:hover {
-    color: var(--primary);
-    font-size: 1.05rem;
 }
 
 @media (max-width: 600px) {
