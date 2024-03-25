@@ -1,258 +1,259 @@
 :root {
-    --primary: #8fc0dd;
-    --title: #f9f9f9;
-    --text: #828282;
-    --background: #191919;
-    --deeper-background: #101010;
+  --primary: #8fc0dd;
+  --title: #f9f9f9;
+  --text: #828282;
+  --background: #191919;
+  --deeper-background: #101010;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: var(--background);
-    color: var(--title);
-    font-weight: 400;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  color: var(--title);
+  font-weight: 400;
 }
 
 header {
-    width: 90%;
-    max-width: 1120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 90%;
+  max-width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header a:hover {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    justify-items: center;
-    gap: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  gap: 20px;
 }
 
 #menu {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 nav {
-    display: block;
+  display: block;
 }
 
 ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 li {
-    margin-top: 2.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+  margin-top: 2.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 li::after {
-    color: var(--primary);
-    color: red;
+  color: var(--primary);
+  color: red;
 }
 
 #contact {
-    width: 90%;
-    max-width: 1120px;
-    margin-top: 7rem;
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 90%;
+  max-width: 1120px;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #about {
-    text-align: center;
-    width: 70%;
-    margin-bottom: 3rem;
+  text-align: center;
+  width: 70%;
+  margin-bottom: 3rem;
 }
 
 #projects {
-    display: flex;
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #skills {
-    display: block;
-    flex-direction: column;
-    align-self: center;
-    text-align: center;
+  display: block;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
 }
 
 footer {
-    width: 100%;
-    min-height: 60px;
-    display: flex;
-    margin-top: 8rem;
-    flex-direction: row;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    background-color: var(--deeper-background);
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  margin-top: 8rem;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--deeper-background);
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 h1 {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 h1#title {
-    font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 
 h2 {
-    margin: 2rem auto;
-
+  margin: 2rem auto;
 }
 
 h3 {
-    margin-top: 1rem;
-    font-size: 1.125rem;
-    font-weight: 500;
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
-p, span {
-    max-width: 745px;
-    margin-top: 0.2rem;
-    margin-left: auto;
-    margin-right: auto;
-    color: silver;
-    line-height: 2rem;
+p,
+span {
+  max-width: 745px;
+  margin-top: 0.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: silver;
+  line-height: 2rem;
 }
 
 div.logos {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 a.logo {
-    color: var(--text);
-    font-size: 0.9rem;
+  color: var(--text);
+  font-size: 0.9rem;
 }
 
 a.logo span {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 a.logo span:hover {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 a.logo img {
-    width: 20px;
-    margin-right: 10px;
+  width: 20px;
+  margin-right: 10px;
 }
 
 .fun-img {
-    width: 350px;
+  width: 350px;
 }
 
 .cards {
-    max-width: 1200px;
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2.75rem;
+  max-width: 1200px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.75rem;
 }
 
 .card {
-    max-width: 20rem;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    background-color:var(--deeper-background);
-    border: 1px solid #333;
-    text-align: left;
+  max-width: 20rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--deeper-background);
+  border: 1px solid #333;
+  text-align: left;
 }
 
 .card:hover {
-    border-color: var(--primary);
-    transition: all 500ms;
+  border-color: var(--primary);
+  transition: all 500ms;
 }
 
 .card-img {
-    max-width: 18.5rem;
-    width: 100%;
-    object-fit: cover;
+  max-width: 18.5rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 .mini-cards {
-    max-width: 900px;
-    margin: 20px;
-
+  max-width: 900px;
+  margin: 20px;
 }
 
 .mini-card {
-    max-width: 10rem;
-    padding: 2rem;
+  max-width: 10rem;
+  padding: 2rem;
 }
 
-.card p, span {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-    margin-top: 1rem;
+.card p,
+span {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  margin-top: 1rem;
 }
 
 @media (max-width: 600px) {
-    header {
-        width: 100%;
-        flex-direction: column;
-    }
+  header {
+    width: 100%;
+    flex-direction: column;
+  }
 
-    div nav ul {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-    }
+  div nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
 
-    nav ul li {
-        margin-top: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  nav ul li {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    #contact {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        flex-direction: column;
-        gap: 50px;
-    }
+  #contact {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    gap: 50px;
+  }
 
-    h1 {
-        margin-bottom: 1rem;
-    }
+  h1 {
+    margin-bottom: 1rem;
+  }
 
-    .fun-img {
-        width: 250px;
-    }
+  .fun-img {
+    width: 250px;
+  }
 }
